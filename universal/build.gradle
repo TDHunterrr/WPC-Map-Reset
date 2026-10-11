@@ -1,0 +1,34 @@
+plugins {
+    id 'multiloader-common'
+}
+
+evaluationDependsOn(':fabric')
+evaluationDependsOn(':neoforge')
+evaluationDependsOn(':paper')
+
+tasks.register('universalJar', Jar) {
+    archiveBaseName.set("${mod_id}")
+    archiveVersion.set(project.version)
+    
+    from(project(':fabric').tasks.named('remapJar')) {
+        into 'META-INF/jars'
+        rename '.*', 'fabric-mod.jar'
+    }
+    from(project(':neoforge').tasks.named('jar')) {
+        into 'META-INF/jars'
+        rename '.*', 'neoforge-mod.jar'
+    }
+    from(project(':paper').tasks.named('jar')) {
+        into 'META-INF/jars'
+        rename '.*', 'paper-plugin.jar'
+    }
+    
+    from sourceSets.main.output.resourcesDir
+    
+    dependsOn(project(':fabric').tasks.named('remapJar'))
+    dependsOn(project(':neoforge').tasks.named('jar'))
+    dependsOn(project(':paper').tasks.named('jar'))
+    dependsOn(tasks.named('processResources'))
+}
+
+build.dependsOn(universalJar)

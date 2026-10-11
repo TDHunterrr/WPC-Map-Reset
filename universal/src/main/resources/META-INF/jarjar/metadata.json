@@ -1,0 +1,16 @@
+{
+  "jars": [
+    {
+      "identifier": {
+        "group": "com.wpc.map.reset",
+        "artifact": "wpc-map-reset-neoforge"
+      },
+      "version": {
+        "range": "[0,)",
+        "artifactVersion": "${version}"
+      },
+      "path": "META-INF/jars/neoforge-mod.jar",
+      "isObfuscated": false
+    }
+  ]
+}

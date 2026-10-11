@@ -1,0 +1,16 @@
+{
+	"schemaVersion": 1,
+	"id": "wpc_map_reset_universal",
+	"version": "${version}",
+	"name": "WPC Map Reset",
+	"description": "Universal mod file.",
+	"environment": "*",
+	"jars": [
+		{
+			"file": "META-INF/jars/fabric-mod.jar"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=${fabric_loader_version}"
+	}
+}

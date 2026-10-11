@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="${neoforge_loader_version_range}"
+license="ARR"
+
+[[jars]]
+    identifier="wpc_map_reset"
+    version="${version}"
+    file="META-INF/jars/neoforge-mod.jar"
+
+[[mods]]
+modId="wpc_map_reset_universal"
+version="${version}"
+displayName="WPC Map Reset Universal"
+authors="TD_Hunterrr"
+description="Universal Mod Shell"
+
+[[dependencies.wpc_map_reset_universal]]
+    modId="neoforge"
+    type="required"
+    versionRange="${neoforge_loader_version_range}"
+    ordering="NONE"
+    side="BOTH"

@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "wpc_map_reset",
+	"version": "${version}",
+	"name": "WPC Map Reset",
+	"description": "A WorldEdit-style clipboard mod for Minecraft. Copy, paste, save, and load structures using a selection wand with full 3D rotation support.",
+	"authors": [
+		"TD_Hunterrr"
+	],
+	"contact": {},
+	"license": "ARR",
+	"icon": "assets/wpc-map-reset/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.wpc.map.reset.fabric.WPCMapResetFabric"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=${fabric_loader_version}",
+		"minecraft": "${fabric_minecraft_range}",
+		"java": ">=${java_version}",
+		"fabric-api": "*"
+	}
+}

@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="${neoforge_loader_version_range}"
+license="ARR"
+issueTrackerURL=""
+
+[[mods]]
+modId="wpc_map_reset"
+version="${version}"
+displayName="WPC Map Reset"
+authors="TD_Hunterrr"
+description='''
+A WorldEdit-style clipboard mod for Minecraft. Copy, paste, save, and load structures using a selection wand with full 3D rotation support.
+'''
+logoFile="assets/wpc-map-reset/icon.png"
+
+[[dependencies.wpc_map_reset]]
+    modId="neoforge"
+    type="required"
+    versionRange="${neoforge_loader_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.wpc_map_reset]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"

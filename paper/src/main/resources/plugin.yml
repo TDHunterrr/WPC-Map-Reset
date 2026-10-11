@@ -1,0 +1,27 @@
+name: WPCMapReset
+version: '${version}'
+main: com.wpc.map.reset.paper.WPCMapResetPaper
+api-version: '1.21'
+folia-supported: true
+author: TD_Hunterrr
+description: A WorldEdit-style clipboard plugin for Minecraft.
+commands:
+  wpc:
+    description: Gives the WPC Wand
+    permission: wpc.use
+  copy:
+    description: Copy selected region to clipboard
+    permission: wpc.use
+  paste:
+    description: Paste clipboard
+    permission: wpc.use
+  save:
+    description: Save clipboard to file
+    permission: wpc.use
+  load:
+    description: Load clipboard from file
+    permission: wpc.use
+permissions:
+  wpc.use:
+    description: Allows using WPC Map Reset wand and commands
+    default: op
