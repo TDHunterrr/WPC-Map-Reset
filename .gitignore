@@ -19,6 +19,8 @@ build
 .gradle
 
 # other
+.agents
+.vscode
 eclipse
 run
 runs

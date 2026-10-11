@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.wpc.map.reset.fabric.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "CommandsMixin",
+    "MinecraftServerMixin",
+    "ServerPlayerGameModeMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
