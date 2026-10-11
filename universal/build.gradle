@@ -22,6 +22,8 @@ tasks.register('universalJar', Jar) {
         into 'META-INF/jars'
         rename '.*', 'paper-plugin.jar'
     }
+
+    from(project(':paper').sourceSets.main.output)
     
     from sourceSets.main.output.resourcesDir
     
