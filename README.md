@@ -19,7 +19,7 @@ A powerful WorldEdit-style clipboard mod and server plugin for Minecraft. Easily
 ## 🎮 How to Use
 
 ### 1. Install the plugin
-Go to [Modrinth page of this plugin](https://modrinth.com/plugin/wpc-map-reset) and install the latest version of the plugin
+Go to [Modrinth page](https://modrinth.com/plugin/wpc-map-reset) of this plugin and install the latest version of the plugin
 
 ### 2. The Wand (`/wpc`)
 Run `/wpc` to receive the **WPC Wand**.
